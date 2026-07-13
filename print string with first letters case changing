@@ -1,0 +1,11 @@
+string = input("enter string:")
+newSTR= ""
+for i in string:
+  if ord(i) >= 97:
+   newSTR += chr( ord(i) - 32)
+  elif i == " ":
+    newSTR+=" "
+  else:
+       newSTR += chr( ord(i) + 32)
+
+print(newSTR)
